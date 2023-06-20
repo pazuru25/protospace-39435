@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="g963oLvNPO-SDk3tG7xw" name="ページ1">
+        <mxGraphModel dx="608" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="ProtoSpaceのER図" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="60" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="swimlane;startSize=0;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="100" width="260" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="usersテーブル&lt;br&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;email (string型,NOT NULL,ユニーク制約)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;encrypted_password (string型,NOT NULL)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;name (string型,NOT NULL)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;profile (text型,NOT NULL)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;occupation (text型,NOT NULL)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;position (text型,NOT NULL)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="10" y="15" width="250" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="swimlane;startSize=0;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="100" width="290" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="prototypesテーブル&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;title (string型,NOT NULL)&lt;/span&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;catch_copy (text型,NOT NULL)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;concept (text型,NOT NULL)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;user (references型,NOT NULL,外部キー)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;※imageはActiveStoraegで実装するため含まない&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="9">
+                    <mxGeometry x="10" y="15" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="swimlane;startSize=0;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="330" width="290" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="commentsテーブル&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;content (text型,NOT NULL)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;prototype (references型,NOT NULL,外部キー)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;user (references型,NOT NULL,外部キー)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="11">
+                    <mxGeometry x="10" y="30" width="270" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
